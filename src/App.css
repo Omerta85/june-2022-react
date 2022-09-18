@@ -1,3 +1,10 @@
+
+.name{
+  background: wheat;
+  text-align: center;
+  color: #592459;
+}
+
 .App {
   text-align: center;
 }
