@@ -1,12 +1,15 @@
 import './App.css';
-import Users from "./components/users/Users";
+import Users from "./Components/users/Users";
 
 function App() {
-
-  return (<div>
-        <h2>app component header</h2>
-        <Users/>
-  </div>);
+    let classNameItem = 'card';
+    return(
+        <div className={classNameItem}>
+            <div>
+                <Users />
+            </div>
+        </div>
+    )
 }
 
 export default App;

@@ -1,0 +1,15 @@
+.userContainer{
+    border: 1px solid black;
+    margin: 20px;
+    background: #6ec3c5;
+    color: #177e83;
+
+}
+button{
+    height: 25px;
+    margin-bottom: 10px;
+    border: 2px solid #d07c87;
+    border-radius: 3px;
+    background: #d07c87;
+    color: white;
+}

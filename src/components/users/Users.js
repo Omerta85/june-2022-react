@@ -1,19 +1,49 @@
-import User from "../user/User";
-import {useState} from "react";
+import React from "react";
+import {useState, useEffect} from "react";
+import User from "./User";
+import axios from "axios";
+import "./Users.css";
 
-export default function Users() {
-    let [users,setUsers] = useState([]);
+function Users (){
+    let [users, setUsers] = useState([]);
+    let [user, setUser] = useState()
 
-    fetch('https://jsonplaceholder.typicode.com/users')
-        .then(value => value.json())
-        .then(value =>{
-            setUsers(value);
+
+
+    const lift = (id) => {
+        setUser(id);
+    }
+
+    // useEffect(()=>{
+    //     fetch('https://jsonplaceholder.typicode.com/users')
+    //         .then(response => response.json())
+    //         .then(data => (
+    //             setUsers(data)
+    //         ));
+    // })
+
+    const baseUrl = 'https://jsonplaceholder.typicode.com/users';
+
+    React.useEffect(() => {
+        axios.get(baseUrl).then((response) => {
+            setUsers(response.data);
         });
+    }, []);
 
-    return (
-        <div>
-            {users.map((user, index) =>(<User user = {user} key={index}/>))}
+    return (<div className={'styles'}>
 
+            <hr/>
+            <h3 className='popup'>{user?.username + ' --- ' + user?.email}</h3>
+            <hr/>
+
+
+            {users.map((value => (<User
+                item={value}
+                key={value.id}
+                lift ={lift}
+            />)))}
         </div>
     );
 }
+
+export default Users;
