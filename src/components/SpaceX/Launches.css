@@ -1,0 +1,7 @@
+.styles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: deepskyblue;
+    padding: 10px;
+}

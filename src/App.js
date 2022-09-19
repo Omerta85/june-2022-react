@@ -1,12 +1,18 @@
 import './App.css';
-import Flys from "./Components/SpaceX/Flys";
+import Launches from "./Components/SpaceX/Launches";
 
 function App() {
-
-  return (<div className={'name'}>
-      <h2>SpaceX</h2>
-      <Flys/>
-  </div>);
+    let classNameItem = 'card';
+    return(
+        <div className={classNameItem}>
+            <div className={'title'}>
+                <h1>SpaceX from Ukraine</h1>
+            </div>
+            <div className='info'>
+                <Launches/>
+            </div>
+        </div>
+    )
 }
 
 export default App;
