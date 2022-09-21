@@ -1,11 +1,12 @@
 import './App.css';
+import {Cars} from "./components";
+
 
 
 function App() {
-
-  return (<div>
-
-  </div>);
+  return (
+      <Cars/>
+  );
 }
 
 export default App;
