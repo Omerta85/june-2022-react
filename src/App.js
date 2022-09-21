@@ -1,11 +1,25 @@
+import {useState} from "react";
+
 import './App.css';
+import {userService} from "./services";
+import {Posts, Users} from "./components";
 
 
 function App() {
 
-  return (<div>
+  let [postsID, setPostsID] = useState(null)
 
-  </div>);
+  const setPostsById = (id) => {
+    setPostsID(id)
+  }
+
+  return (
+      <div className="App">
+        <Users setPostsById={setPostsById}></Users>
+        {postsID && <Posts postsID={postsID}/>}
+
+      </div>
+  );
 }
 
 export default App;
