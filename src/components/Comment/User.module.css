@@ -1,0 +1,15 @@
+.User{
+    border: 1px solid black;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    background: #dede2e;
+    color: #2060ea;
+}
+
+.tools button{
+    margin: 5px;
+    background: #003c80;
+    color: #dede2e;
+
+}

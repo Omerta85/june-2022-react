@@ -1,11 +1,13 @@
-import './App.css';
-
+import {Comments} from "./components";
 
 function App() {
 
-  return (<div>
+    return (
+        <div>
+            <Comments/>
+        </div>
+    );
 
-  </div>);
 }
 
 export default App;
