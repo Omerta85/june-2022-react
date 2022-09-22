@@ -2,5 +2,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    height: 400px;
+    margin-left: 75px;
+}
+.wrapper{
+    background: blue;
+    text-align: center;
 }
