@@ -1,0 +1,27 @@
+.post {
+    display: inline-block;
+    text-shadow:
+            1px 1px 1px white,
+            1px -1px 1px white,
+            -1px 1px 1px white,
+            -1px -1px 1px white;
+    color: #001aff;
+    transition: all 1s;
+}
+
+.post:after {
+    content: "";
+    display: block;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    margin: auto;
+    border-bottom: 3px solid #001aff;
+    bottom: .15em;
+    transition: all 1s;
+}
+
+.post:hover:after {
+    width: 0%;
+    border-bottom-width: 1px;
+}

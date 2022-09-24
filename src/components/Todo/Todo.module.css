@@ -1,0 +1,21 @@
+.todo{
+    border: 1px solid;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background: yellow;
+    height: 50px;
+
+    font-size: 20px;
+    font-weight: normal;
+    cursor: pointer;
+    text-shadow: 0 0 15px #001aff;
+    color: transparent;
+    transition: all .5s;
+}
+
+.todo:hover {
+    text-shadow: 0 0 0 #333;
+}
