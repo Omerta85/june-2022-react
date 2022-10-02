@@ -1,0 +1,16 @@
+.name{
+    background: blue;
+    color: yellow;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1000%;
+}
+.Animals{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30%;
+    padding-left: 20%;
+    background: yellow;
+}
