@@ -1,35 +1,35 @@
-import React from "react";
 import {carService} from "../../services";
 
-const Car = ({car,setCars, togle, getCar}) => {
-    const{id,model,price,year,photo} = car;
+const Car = ({car, setCars}) => {
+    const {id, model, price, year, photo} = car;
 
-    const sendPhoto = async (e)=>{
+    const sendPhoto = async (e) => {
         const formData = new FormData();
-        const[file] = e.target.files;
+        const [file] = e.target.files;
         formData.append('photo', file)
         const {data} = await carService.addPhotoById(id, formData);
         setCars(cars=>{
-            const find = cars.find(car=>car.id === id)
+            const find = cars.find(car=>car.id === id);
             Object.assign(find, {...data, photo:URL.createObjectURL(file)})
-            return[...cars]
+            return [...cars]
         })
-    }
 
+    }
     return (
         <div>
-            <div>id:{id}</div>
-            <div>model:{model}</div>
-            <div>price:{price}</div>
-            <div>year:{year}</div>
+            <div>id: {id}</div>
+            <div>model: {model}</div>
+            <div>price: {price}</div>
+            <div>year: {year}</div>
             {
                 photo?
                     <img src={photo} alt={model}/>
                     :
                     <input type="file" onChange={sendPhoto}/>
+
             }
         </div>
-
     );
-}
+};
+
 export {Car};
