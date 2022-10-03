@@ -1,33 +1,62 @@
-import {carService} from "../../services";
+import React, {useState} from "react";
 
-const Car = ({car, setCars}) => {
-    const {id, model, price, year, photo} = car;
+import {carsService} from "../../services";
+import css from './car.module.css'
 
-    const sendPhoto = async (e) => {
+const Car = ({car, setUbdCar, setCars, id, setId, setFlag}) => {
+
+
+    const sendPhoto = async (e) =>{
         const formData = new FormData();
-        const [file] = e.target.files;
-        formData.append('photo', file)
-        const {data} = await carService.addPhotoById(id, formData);
+        formData.append('photo', e.target.files[0])
+        const {data} = await carsService.addPhotoById(car.id, formData)
         setCars(cars=>{
-            const find = cars.find(car=>car.id === id);
-            Object.assign(find, {...data, photo:URL.createObjectURL(file)})
-            return [...cars]
-        })
-
-    }
-    return (
-        <div>
-            <div>id: {id}</div>
-            <div>model: {model}</div>
-            <div>price: {price}</div>
-            <div>year: {year}</div>
-            {
-                photo?
-                    <img src={photo} alt={model}/>
-                    :
-                    <input type="file" onChange={sendPhoto}/>
-
+                let find = cars.find(auto=>auto.id === car.id)
+                Object.assign(find, {...data, photo:URL.createObjectURL(e.target.files[0] )})
+                return [...cars]
             }
+        )
+    }
+
+    const delCar = (id) =>{
+        carsService.delById(id)
+        setCars(car=>{
+            const index = car.findIndex(value => value.id === id)
+            car.splice(index, 1)
+            return [...car]
+        })
+    }
+
+    const update = (val) =>{
+        if(id !== val){
+            setId(val)
+            setFlag(true)
+            setUbdCar({...car})
+        }else {
+            setFlag(false)
+            setId(null)
+            setUbdCar(null)
+
+        }
+    }
+
+    return (
+        <div className={css.car}>
+            <div className={css.text}>
+                <div>id - {car.id}</div>
+                <div>model - {car.model}</div>
+                <div>price - {car.price}</div>
+                <div>year - {car.year}</div>
+            </div>
+            {car.photo?
+                <img className={css.img} src={car.photo} alt={car.model}/>
+                :
+                <input type="file"  onChange={sendPhoto}/>
+            }
+            <div className={css.btns}>
+             <button onClick={() => delCar(car.id)}>Delete</button>
+            <button onClick={()=> update(car.id)}>Update</button>
+            </div>
         </div>
     );
 };

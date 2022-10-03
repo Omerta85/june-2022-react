@@ -1,34 +1,33 @@
-.Header{
-    height: 100px;
-    background: blue;
+
+.maine{
+    margin: 50px;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
-.Header h1 {
-    color: yellow;
-    letter-spacing: 6px;
-    font-size: 45px;
+.input{
+    width: 20%;
+    height: 40px;
+    border-radius: 10px;
+    background: black;
+    color: red;
+    font-style: italic;
     font-weight: bold;
-    font-style: oblique
 }
-.Header img {
-    height: 95px;
-    background: blue;
-}
-.btns button {
+.btn {
     align-items: center;
     appearance: none;
-    background-color: yellow;
+    background-color: blue;
     border-radius: 4px;
     border-width: 0;
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
     box-sizing: border-box;
-    color: #36395A;
+    color: #0e010e;
     cursor: pointer;
     display: inline-flex;
     font-family: "JetBrains Mono", monospace;
-    height: 48px;
+    height: 30px;
     justify-content: center;
     line-height: 1;
     list-style: none;
@@ -48,16 +47,16 @@
     font-size: 18px;
 }
 
-.btns button:hover{
-     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-     transform: translateY(-2px);
- }
+.btn{
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
 
-.btns button:focus{
-     box-shadow: #D6D6E7 0 0 0 2px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
- }
+.btn{
+    box-shadow: #D6D6E7 0 0 0 2px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
 
-.btns button:active{
-     box-shadow: #D6D6E7 0 3px 7px inset;
-     transform: translateY(2px);
- }
+.btn{
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
