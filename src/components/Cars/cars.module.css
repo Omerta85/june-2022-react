@@ -2,6 +2,7 @@
     width: 80%;
     display: flex;
     gap: 20px;
-    margin: 0 auto;
+    margin: auto;
+    padding-left: 20%;
     flex-wrap: wrap;
 }
