@@ -1,97 +1,53 @@
-"use strict";
-// повернення типу
-// const x = (str:string): number|string =>{
-//     return 17
-// }
-// Повернення пустоти
-// const x = (str:string): void =>{
-// }
-//
-// interface IUser <T>{
-//     name:string,
-//     age:number,
-//     status:boolean,
-//     data: T
-// }
-// interface IDog {
-//     name: string,
-//     age: number
-//
-// }
-//
-// // const user: Partial<IUser> = {status:true}
-// //
-// // console.log(user.name)
-// const user:IUser<IDog> = {age:18, name:'max', status: false, data:[{name:'rex', age:2}]}
-exports.__esModule = true;
-// class User{
-//     constructor(public id: number, protected name: string, private age: number) {
-//         this.id = id;
-//         this.name = name;
-//         this.age = age;
-//     }
-// }
-// //
-// // const user = new User(id:15, name:'Max', age:15);
-// // console.log(user.id);
-//
-// interface IShapeAction{
-//     area:()=>number,
-//     perimeter:()=> number
-// }
-//
-// interface IGreaeting{
-//     hello:()=>void
-// }
-// class Rectangle implements IShapeAction, IGreaeting{
-//     constructor(private a: number, private b: number) {
-//     }
-//     area(): number {
-//         return this.a*this.b;
-//     }
-//
-//     hello(): void {
-//         console.log("Hello")
-//     }
-//
-//     perimeter(): number {
-//         return this.a*2+this.b*2
-//     }
-//
-// }
-//
-// const rectangle = new Rectangle(5,10);
-// console.log(rectangle.area());
-//
-// class Triangle implements IShapeAction{
-//     constructor(private a: number, private b:number, private c:number) {
-//     }
-//     area(): number {
-//         return this.a*this.b*this.c;
-//     }
-//
-//     perimeter(): number {
-//         return this.c*2/this.b;
-//     }
-//
-// }
-// const shapes:IShapeAction[] = [new Rectangle(2,5), new Triangle(1,2,3)]
-//
-// for(let shape of shapes){
-//     console.log(shape.area());
-//     console.log(shape.perimeter());
-// }
-// const asd=()=>{
-//     return 18
-// }
-//
-// type MyFuncType= ReturnType<typeof asd>
-// const a:MyFuncType = 15
-// import {userService} from "./services";
-//
-// userService.getAll().then(value =>console.log(value.data[0].username))
-var services_1 = require("./services");
-services_1.userService.getById(2).then(function (_a) {
-    var data = _a.data;
-    return console.log(data.address.city);
-});
+var task1 = {
+    mission_name: "Starlink-15 (v1.0)",
+    launch_date_local: "2020-10-24T11:31:00-04:00",
+    launch_site: {
+        site_name_long: "Cape Canaveral Air Force Station Space Launch Complex 40"
+    },
+    links: {
+        article_link: null,
+        video_link: "https://youtu/J442-ti-Dhg"
+    },
+    rocket: {
+        rocket_name: "Falcon 9",
+        first_stage: {
+            cores: [
+                {
+                    flight: 7,
+                    core: {
+                        reuse_count: 6,
+                        status: "unknown"
+                    }
+                }
+            ]
+        },
+        second_stage: {
+            payloads: [
+                {
+                    payload_type: "Satellite",
+                    payload_mass_kg: 15400,
+                    payload_mass_lbs: 33951.2
+                }
+            ]
+        }
+    }
+};
+console.log(task1);
+var user = {
+    name: "Max",
+    age: 18,
+    gender: 'male'
+};
+function sum(a, b) {
+    return a + b;
+}
+function showSum(a, b) {
+    console.log(a + b);
+}
+function incAge(someUser, inc) {
+    someUser.age += inc;
+    return someUser;
+}
+console.log(sum(1, 2));
+showSum(2, 3);
+incAge(user, 2);

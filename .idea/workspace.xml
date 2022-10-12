@@ -4,28 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcd8da65-1f11-4b2c-91e0-c0e6e691ef55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/june-2022-react.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+    <list default="true" id="fcd8da65-1f11-4b2c-91e0-c0e6e691ef55" name="Changes" comment="TS lesson 1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/user.interface.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/user.interface.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/axios.service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/axios.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user.service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user.service.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +32,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="typescript" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -75,15 +72,29 @@
       <updated>1665563019250</updated>
       <workItem from="1665563020866" duration="376000" />
       <workItem from="1665563406379" duration="6327000" />
-      <workItem from="1665579629958" duration="2355000" />
+      <workItem from="1665579629958" duration="3613000" />
     </task>
+    <task id="LOCAL-00001" summary="TS lesson 1">
+      <created>1665582115675</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665582115676</updated>
+    </task>
+    <task id="LOCAL-00002" summary="TS lesson 1">
+      <created>1665582422786</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665582422786</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/services/index.js" />
         <option value="$PROJECT_DIR$/services/user.service.js" />
         <option value="$PROJECT_DIR$/services/axios.service.js" />
@@ -102,5 +113,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="TS lesson 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="TS lesson 1" />
   </component>
 </project>
